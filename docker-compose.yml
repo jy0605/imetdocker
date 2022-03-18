@@ -15,7 +15,7 @@ services:
       - "5000:5000"
     # 환경변수 설정
     environment: 
-      - DBHOST=database
+      - DBHOST=database # 해당 dbhost 명으로 container의 database에 연결하는 것임
   frontend:
     build: ./frontend
     # 연결할 외부 디렉토리 : 컨테이너 내 디렉토리

@@ -8,7 +8,7 @@ ENV MYSQL_PASSWORD mysql_password
 ENV MYSQL_ROOT_PASSWORD mysql_root_password
 ENV MYSQL_DATABASE visitlog
 
-# 도커환경에서 컨테이너 생성시 스크립트를 실행하는 폴더로
+# 도커환경에서 컨테이너 생성시 스크립트를 실행하는 폴더로(v(olumn)은 docker 내부와 외부를 연결하는것, copy는 container에 copy해두는것)
 # 미리 작성된 스크립트들을 이동
 COPY ./scripts/ /docker-entrypoint-initdb.d/
 
